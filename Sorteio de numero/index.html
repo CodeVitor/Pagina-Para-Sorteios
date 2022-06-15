@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sorteio de Numeros</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    
+    <div class="container">
+        <a href="../Sorteio de Pessoas/index.html"
+      >Voltar para o sorteio de Pessoas</a
+    >
+    <h1>Escolha o número máximo que você deseja sortear</h1>
+    <input id="elementoInput" type="text" placeholder="exemplo:100" />
+    <button id="buttonSortear" onclick="sortear()">Sortear</button>
+    <p id="sorteado"></p>
+    </div>
+    <script>
+      function sortear() {
+        let elementoInput = document.querySelector("input");
+        let elementoButton = document.querySelector("button");
+
+        let conteudoInput = elementoInput.value;
+
+        let numeroSorteado = Math.round(Math.random() * conteudoInput);
+
+        document.getElementById("sorteado").innerHTML = numeroSorteado;
+      }
+    </script>
+  </body>
+</html>

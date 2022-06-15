@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagina Para Sorteios</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    
+    <div class="container">
+        <a  id="outrapg" href="../Sorteio de numero/index.html">Sorteio de Numeros</a>
+      <h1>SORTEIOS</h1>
+        
+      <input type="text" placeholder="Digite os nomes" id="elementoInput" />
+      <button onclick="addParticipantes()" id="buttonElement">Adicionar</button>
+
+      <div class="container-lista">
+        <ul id="ulElement"></ul>
+      </div>
+      <div class="container-sorteio">
+        <button id="buttonSortear" onclick="sortear()">Sortear</button>
+        <h2 id="resu"></h2>
+        <p id="sorteado"></p>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
